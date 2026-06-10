@@ -15,6 +15,8 @@ def ingresar():
         pre=int(input("Ingrese su precio "))
         precios.append(pre)
         articulos.append(art)
+    
+def printt():
     print("Los articulos y sus precios son: ")
     for i in range (5):
         print(articulos[i],precios[i])
@@ -32,5 +34,6 @@ def igual():
             print("el producto: ", articulos[i],"tiene un precio igual o menor a tu precio objetivo")
 
 ingresar()
+print()
 mayor()
 igual()

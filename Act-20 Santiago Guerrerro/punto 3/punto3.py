@@ -4,16 +4,16 @@
 positivos y en otra los negativos.
 3) Imprimir las dos listas generadas."""
 
-
+lipos=[]
+lineg=[]
 def cargar():
-    lipos=[]
-    lineg=[]
     for i in range(10):
         ingresar=int(input("ingrese 10 numeros positivos o negativos"))
         if ingresar<0:
             lineg.append(ingresar)
         else:
             lipos.append(ingresar)
+def printt():
     print("Lista positiva")
     for x in range(len(lipos)):
         print(lipos[x])
@@ -22,3 +22,4 @@ def cargar():
         print(lineg[t])
 
 cargar()
+printt()
