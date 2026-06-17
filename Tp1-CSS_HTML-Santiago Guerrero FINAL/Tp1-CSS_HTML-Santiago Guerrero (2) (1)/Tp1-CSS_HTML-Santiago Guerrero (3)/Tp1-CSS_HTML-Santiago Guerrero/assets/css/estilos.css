@@ -1,0 +1,370 @@
+@font-face {
+    font-family:"Roboto" ;
+    src:url(../fonts/Roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family:"OpenSans" ;
+    src:url(../fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+
+nav { 
+    background: linear-gradient(to right, rgb(12, 12, 12), rgb(18, 17, 54));
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+} 
+
+.nav-logo img{
+    width: 100px;
+    height: 100px;
+
+
+} 
+
+.contenedor-nav { 
+    max-width: 1200px;
+    height: 75px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+
+} 
+
+
+
+.lista-nav { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    flex-grow: 1; 
+    justify-content: left; 
+} 
+
+.lista-nav li { 
+    margin: 0 15px; 
+} 
+
+.lista-nav a { 
+    text-decoration: none; 
+    color: #ffffff; 
+    font-size: 20px; 
+    font-weight: 600; 
+    padding: 0px ; 
+    display: flex; 
+    align-items: center; 
+    font-family: Roboto ;
+} 
+
+.lista-nav a:hover { 
+    color: #766eda; 
+    box-shadow: 0 2px 0 0 #6a67b8;
+} 
+
+
+
+body{
+     background: linear-gradient(to right, rgb(45, 29, 90), rgb(18, 17, 45));
+    margin: 0%;
+    padding: 0%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+}
+.contenido-body {
+    background: linear-gradient(to right, rgb(61, 43, 112), rgb(9, 9, 18));
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    gap: 40px;          
+    max-width: 1000px;   
+    margin: 0 auto;  
+    padding: 30px;
+    border-radius: 55px;   
+    border-bottom: #5b5b5b;
+    margin-bottom: 30px;
+}
+
+
+.titulo-body-sobremi{
+    font-size: 36px;
+    color: #e8e8e8;
+    margin-bottom: 40px;
+    font-family: Roboto;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.sobre-mi{
+    margin-bottom: 180px;
+}
+
+
+
+
+.body-cara img {
+    width: 350px;        
+    height: 350px; 
+    border-radius: 20px;
+           
+
+}
+
+
+#seccion-izq {
+    flex: 1;          
+}
+
+.titulo-body{
+    font-size: 35px;
+}
+
+.subtitulo-body-izq{
+    font-size: 16px;
+    padding: 15px;
+    color: #ffffff;
+    border-radius: 15px;
+    font-family: OpenSans;
+}
+
+.seccion-habilidades {
+    background: linear-gradient(to right, rgb(13, 9, 25), rgb(36, 33, 117));
+    max-width: 1200px;
+    margin: 80px auto; 
+    padding:40px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 180px;
+}
+
+
+.titulo-seccion {
+    font-size: 36px;
+    color: #e8e8e8;
+    margin-bottom: 40px;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center; 
+    gap: 25px;            
+}
+
+
+.tarjeta-habilidad {
+    background-color: #212121;
+    border: 1px solid #363636;
+    border-radius: 10px;
+    padding: 30px;
+    width: 200px;      
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    text-align: center;
+    font-family: OpenSans;
+}
+.tarjeta-habilidad:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1); 
+}
+
+
+.icono-tarjeta img {
+    width: 100px;        
+    height: 100px;    
+    margin-bottom: 15px;
+}
+
+.tarjeta-habilidad h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.tarjeta-habilidad p {
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 1.4;
+}
+
+
+.seccion-proyectos {
+    background: linear-gradient(to right, rgb(66, 51, 112), rgb(12, 11, 48));
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 300px;
+}
+
+
+.contenedor-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; 
+}
+
+
+.tarjeta-proyecto {
+    background-color: #212121;
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+    overflow: hidden; 
+    width: 310px;   
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center; 
+    font-family: OpenSans;
+}
+
+.tarjeta-proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.imagen-proyecto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; 
+}
+
+
+.contenido-proyecto {
+    padding: 20px;
+}
+
+.contenido-proyecto h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.contenido-proyecto p {
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 32px;
+    height: 65px; 
+    overflow:inherit;
+}
+
+
+.boton-proyecto {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #383838; 
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.boton-proyecto:hover {
+    background-color: #5b5b5b; 
+}
+
+footer{
+  background: linear-gradient(to right, rgb(26, 26, 26), rgb(42, 33, 93));
+  color: rgb(255, 255, 255);
+  padding-left: 50px;
+  padding-right: 50px;
+  height: 160px;
+  justify-content: center;
+
+}
+.foot-logo img{
+    width: 300px;
+    height: 300px;
+
+
+} 
+.pri-contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: 300;
+    font-family: OpenSans;
+}
+
+.seccion-contacto {
+
+    max-width: 400px;
+    margin: 30px auto; 
+    padding: 0 20px;
+    text-align: center;
+}
+.titulo-footer{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin: 0px;
+    color: #ffffff;
+    margin-bottom: 2px;
+
+}
+
+
+
+.icons-footer{
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    padding-left: 52px;
+    
+    
+
+}
+
+.icons-footer img{
+width: 40px;
+height: 40px;
+}
+
+
+
+.icono-shadow{
+        transition: background-color 0.2s ease transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 15px;
+}
+
+.icono-shadow:hover {
+    transition-delay: 0.2s;  
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(186, 186, 186, 0.15);
+    background-color: #666666;
+
+}
+
+.texto-final{
+    margin: -20px;
+    color: #ffffff;
+    font-family: OpenSans;
+    font-size: 12px;
+}
+
+hr {
+    background: linear-gradient(to right, rgb(86, 27, 248), rgb(58, 56, 142));
+    height: 4px;
+    border: none;
+    width: 500px;
+}
